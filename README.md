@@ -1,29 +1,30 @@
-# New Project
+# Frontend Bootstrap
 
-> ✨ Bootstrapped with Create Snowpack App (CSA).
+This does not come with postcss, because we are using SASS, so there's no need, the new version of tailwind also purges CSS too which is great!
 
-## Available Scripts
+You can start developing by running:
 
-### npm start
+```
+$ npm run start
+```
 
-Runs the app in the development mode.
-Open http://localhost:8080 to view it in the browser.
+Or you can build it like:
 
-The page will reload if you make edits.
-You will also see any lint errors in the console.
+```
+$ npm run build
+```
 
-### npm test
 
-Launches the test runner in the interactive watch mode.
-See the section about running tests for more information.
+Run your tests like so:
 
-### npm run build
+```
+$ npm run test
+```
 
-Builds a static copy of your site to the `build/` folder.
-Your app is ready to be deployed!
+I want to add a few more scripts, like validation and whatnot.
 
-**For the best production performance:** Add a build bundler plugin like [@snowpack/plugin-webpack](https://github.com/snowpackjs/snowpack/tree/master/plugins/plugin-webpack) or [snowpack-plugin-rollup-bundle](https://github.com/ParamagicDev/snowpack-plugin-rollup-bundle) to your `snowpack.config.json` config file.
 
-### Q: What about Eject?
+### Todo:
 
-No eject needed! Snowpack guarantees zero lock-in, and CSA strives for the same.
+- Build as external CSS file
+- Better production building

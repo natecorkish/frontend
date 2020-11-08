@@ -1,16 +1,22 @@
-const autoPreprocess = require('svelte-preprocess')
+const production = process.env.NODE_ENV === "production"
+const autoPreprocess = require("svelte-preprocess")
 const preprocess = autoPreprocess({
-    postcss: {
-        plugins: [
-            require("tailwindcss"),
-            require("autoprefixer")
-        ],
+    sourceMap: !production,
+    scss: {
+        data: `@import 'src/assets/_tailwind/_base.scss';`,
+        includePaths: ['src'],
     },
+    postcss: true,
     defaults: {
-        script: 'typescript',
+        script: "typescript",
     },
 });
 
 module.exports = {
-    preprocess
+    dev: !production,
+    emitCss: true,
+    css: css => {
+        css.write('public/build/bundle.css');
+    },
+    preprocess,
 }

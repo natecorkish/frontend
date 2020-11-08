@@ -1,0 +1,27 @@
+.theme-light {
+    --bg-primary: theme('colors.white');
+    --bg-secondary: theme('colors.gray.100');;
+    --bg-ternary: theme('colors.gray.400');;
+    --text-primary: theme('colors.gray.700');
+    --text-secondary: theme('colors.gray.500');
+    --text-ternary: theme('colors.blue.500');
+    --border-primary: theme('colors.gray.400');
+    --border-secondary: theme('colors.gray.200');
+}
+
+.theme-dark {
+    //--bg-primary: theme('colors.gray.900');
+    //--bg-secondary: theme('colors.gray.800');
+    --bg-primary: #323438;
+    --bg-secondary: #1e1f21;
+    --bg-ternary: theme('colors.blue.500');;
+    --text-primary: theme('colors.gray.300');
+    --text-secondary: theme('colors.gray.500');
+    --text-ternary: theme('colors.blue.500');
+    --border-primary: theme('colors.gray.700');
+    --border-secondary: theme('colors.gray.500');
+}
+
+a {
+    @apply .text-ternary;
+}

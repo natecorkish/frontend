@@ -6,4 +6,4 @@ const routes = {
     '/contacts': Contacts,
 }
 
-export default routes;
+export { routes };

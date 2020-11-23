@@ -1,9 +1,7 @@
-import Home from './pages/home/index.svelte'
-import Contacts from './pages/contacts/index.svelte'
+import Index from "./pages/index.svelte";
 
-const routes = {
-    '/': Home,
-    '/contacts': Contacts,
-}
+const routes = [
+	{ name: "/", component: Index }
+];
 
 export { routes };
